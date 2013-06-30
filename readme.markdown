@@ -280,7 +280,7 @@ operating system pipes but are automatic when we interface directly with node
 streams the whole time.
 
 If you want to create a readable stream that pushes arbitrary values instead of
-just strings and objects, make sure to create your readable stream with
+just strings and [Buffers](http://nodejs.org/api/buffer.html) (binary data), make sure to create your readable stream with
 `Readable({ objectMode: true })`.
 
 ### consuming a readable stream
